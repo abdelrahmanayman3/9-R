@@ -45,7 +45,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
   background-color: var(--dark-gunmetal);
-  padding: 10px;
+  padding: 5px;
 }
 header .container .logo a {
   padding: 0 30px;
@@ -210,11 +210,13 @@ main .hero .container .image {
 .about .info .btn-view {
   background-color: var(--white);
   color: var(--dark-gunmetal);
+  
 }
-.services {
-  padding-top: 50px;
+.services{
+  padding: 30px 0;
 }
 .services .container {
+  padding: 100px 0;
   background-color: var(--platinum);
 }
 
@@ -252,4 +254,11 @@ main .hero .container .image {
     .services .container .services-list{
         flex-wrap: wrap;
     }
+}
+footer{
+  margin-top: 50px;
+  padding: 30px;
+  background-color: var(--dark-gunmetal);
+  color: var(--white);
+  text-align: center;
 }
