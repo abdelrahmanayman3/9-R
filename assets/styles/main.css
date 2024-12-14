@@ -16,10 +16,6 @@ a {
   text-decoration: none;
   
 }
-header {
-  position: fixed;
-  width: 100%;
-}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -42,6 +38,7 @@ header {
 header {
   position: fixed;
   width: 100%;
+  
 }
 
 header .container {
@@ -49,6 +46,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
   background-color: var(--dark-gunmetal);
+  padding: 10px;
 }
 header .container .logo a {
   padding: 0 30px;
@@ -81,14 +79,16 @@ header nav input {
     background-color: var(--platinum);
   }
   header .container nav ul li a {
+    background-color: var(--dark-gunmetal);
     border: 2px solid rgba(0, 0, 0, 0.446);
     border-radius: 5px;
     display: block;
-   color: var(--black);
-    padding: 10px;
+   color: var(--white);
+    padding: 15px;
   }
 }
 @media (min-width: 992px) {
+ 
   .container {
     width: 100%;
   }
@@ -157,3 +157,63 @@ main .hero .container .info .btn{
     padding:10px 30px;
 }
  }
+ main .hero .container .image{
+margin-top: 30px;
+ }
+
+.about .container a {
+    background-color: var(--dark-gunmetal);
+    border: 2px solid rgba(0, 0, 0, 0.446);
+    border-radius: 5px;
+   color: var(--white);
+    padding: 15px;
+  }
+  .about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 50px;
+  }
+  
+  @media (max-width:991px){
+.about {
+    padding-top: 30px;
+    text-align: center;
+}
+.about .info p{
+    padding-bottom: 40px;
+    text-align: start;
+}
+.about .info :hover{
+    background-color: var(--white);
+    color: var(--dark-gunmetal);
+    font-weight: bold;
+}
+
+  }
+  @media (min-width:992px){
+.about .container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.about .container h2{
+font-size: 50px;
+}
+.about .info p {
+    padding-bottom: 50px;
+}
+.about .info a{
+    width: 40px;
+}
+  }
+  .about .info a:hover{
+    cursor: pointer;
+  }
+  .about .info .btn-view{
+    background-color: var(--white);
+    color: var(--dark-gunmetal);
+  }
